@@ -1,0 +1,93 @@
+
+
+Selenium Key point (formula)
+
+        WebDriverManager.chromedriver().setup();// here we are setting selenium for chrome browser
+        WebDriver driver= new ChromeDriver(); // here we crate our object to open chrome browser
+        driver.manage().window().maximize();// here we maximize the our browser
+
+        driver.get("https://www.tesla.com"); // here we call the website form our browser
+
+        String titleName=driver.getTitle(); // here we get the title and save in new variable.
+
+        String getUrl=driver.gerCurrentUrl(); // here we ger current url form website.
+
+        WebElement getElement= driver.findElement(By.id("inside id name"));// here if u didn't find with id name should check with
+                                                                             something unique attribute like name or class;
+
+     getElement.sentKeys("here sent something");// here let say we get search box and we gonna sent something what we wanna search
+     gerElement.submit();// if you submit its also same like click but u dont need to creat another element to find button to click
+                           so this is easier than click
+     WebElement clickTheSearchButton=driver.findElement(By.name("here write that click button name"))
+     clickTheSearchButton.click();// here we find the button and then click the button;
+
+     WebElement findWithWebName=driver.findElement(By.linkText("link name write here")); // here we write the text name and we can
+                                                                                           find with name the element name
+     findWithWebName.click();
+
+      WebElement findSomePartOfName=driver.findElement(By.partialLinkText("write some part of name on here"));
+               findSomePartOfName.click();// here we can write some part of name of what u wanna click (of course always be careful
+                                             if there is a same name its not gonna work correctly
+
+
+
+      WebElement partOfPace=driver.findElement(By.className("here write class name"));
+              System.out.println(partOfPace.getTagName());// here we can find some part of element tag name with getTagName
+       partOfPace.sentKeys("omer");
+       partOfPace.getAttribute("value"); // you can get name what u write in search box with this keyword
+
+       partOfPace.getAttribute("class");// here its gonna give me what writing in the class attribute
+
+
+
+
+          what is the SDLC
+          it's a proses for develop app  successfully. it should be bug free and high quality and low cost.
+
+          it hase 6 step for developing the app for successfully.this 6 step also divide 2 which is static testing and
+           dynamic testing. ind static testing we have requirement gathering and design the app, in dynamic testing
+           we have developer, tester,  first one is requirement gathering
+          in requirement gathering client has a idea and he come to PO and BA and they analyze the project and they
+          then they write a document and analyze, if there is a bug or not then they give that requirement to designer
+          designer design the app and write the document which call blue print and then developer develop the app and
+          tester test app tehn
+          [;/what is the SDLC
+          it's a proses for develop app  successfully.
+          it should be bug free and high quality and low cost.
+
+         1)requirement gathering  ----> po, claint and ba , document        software requarement specifaction
+         2)design                 ----> software desingne specifaction
+         3)development      ---- unit testing and integration testing
+         4)testing              ----> fonctionla       and        non fontional test
+                                      seaching                       dowoading
+                                      sent mesagge                    stress test
+         5)deploring / release
+
+         6)maintenance
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
